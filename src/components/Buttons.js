@@ -2,6 +2,10 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 
+function rollDice() {
+  alert("You have rolled the dice!");
+}
+
 const useStyles = makeStyles({
   root: {
     background: "linear-gradient(45deg, #039479, 30%, #004c82 90%)",
@@ -16,5 +20,9 @@ const useStyles = makeStyles({
 
 export default function Hook() {
   const classes = useStyles();
-  return <Button className={classes.root}>Roll Dice</Button>;
+  return (
+    <Button className={classes.root} onClick={rollDice}>
+      Roll Dice
+    </Button>
+  );
 }
