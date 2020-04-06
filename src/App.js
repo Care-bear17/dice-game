@@ -1,11 +1,12 @@
-import React from 'react';
-import './App.css';
-import Buttons from './components/Buttons';
+import React from "react";
+import "./App.css";
+import Buttons from "./components/Buttons";
+import WrappedApp from "./components/card1";
 
 function App() {
   return (
     <div className="App">
-     <Buttons/>
+      <WrappedApp />
     </div>
   );
 }
